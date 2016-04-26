@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kuh-Monitor Mk I</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <h1>Kuh-Monitor Mk I</h1>
+
+    <div class="time_selector">
+        <div class="elem active" time="0">Live</div>
+        <div class="elem" time="5">-5 min</div>
+        <div class="elem" time="10">-10 min</div>
+        <div class="elem" time="15">-15 min</div>
+        <div class="elem" time="20">-20 min</div>
+        <div class="elem" time="25">-25 min</div>
+        <div class="elem" time="30">-30 min</div>
+    </div>
+
+    <div class="cam_area">
+        <div class="reload">
+            <div class="bar"></div>
+        </div>
+        <img id="cam" src="cam.jpg" height="768" width="1024">
+        <!---
+        <div class="quality_selector">
+            <div class="qual_button">
+                Hoch
+            </div>
+            <div class="qual_button active">
+                Mittel
+            </div>
+            <div class="qual_button">
+                Niedrig
+            </div>
+        </div>
+        -->
+    </div>
+
+    <div class="audio_area">
+        <img id="waveform" src="wav.png">
+        <div class="played"></div>
+        <div id="play_button"></div>
+        <div id="play_time">00:00 / 00:00</div>
+        <div class="title">Audio-Aufzeichnung</div>
+    </div>
+
+    <div class="data_usage">
+        <div class="bar"></div>
+        <div class="text"></div>
+        <div class="title">Datennutzung</div>
+    </div>
+</body>
+</html>
